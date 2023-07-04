@@ -12,11 +12,13 @@ class Racket(Turtle):
         
          
     def moveUp(self):
-        self.forward(10)
+        if (self.ycor() < 250):
+            self.forward(10)
         
 
     def moveDown(self):
-        self.back(10)
+        if (self.ycor() > -240):
+            self.back(10)
         
         
     
